@@ -1,11 +1,11 @@
-<div class="commentCommenter">
-    <div class="commentLabel">Commenter:</div>
-    <div class="commentText"><%= comment.commenter %></div>
-</div>
-<div class="commentBody">
-    <div class="commentLabel">Comment:</div>
-    <div class="commentText"><%= comment.body %></div>
-</div>
-<div class="delete">
-    <%= link_to 'delete', [comment.post, comment], method: :delete, data: { confirm: 'Are you certain?' } %>
+<div class="comment">
+    <div class="commenter">
+        <%= comment.commenter %>
+    </div>
+    <div class="body">
+        <%= comment.body %>
+    </div>
+    <div class="delete">
+        <%= link_to 'delete', [comment.post, comment], method: :delete, data: { confirm: 'Are you certain?' } %>
+    </div>
 </div>
